@@ -1,0 +1,16 @@
+guess_count = 1
+answr = 0
+
+print("What is 2+3? You have 3 tries.")
+
+while answr != "5":
+
+    answr = input()
+    if answr != "5" and guess_count == 3:
+        print("Dumbfuck, how?")
+        break
+    elif answr != "5":
+        print("That is not it, try again: ")
+        guess_count += 1
+    else:
+        print("You did it!")
